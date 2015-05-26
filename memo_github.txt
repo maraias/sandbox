@@ -1,0 +1,9 @@
+sandbox: for study
+git --global config user.email "email"
+git --global config user.name "name"
+
+追加
+git add filename
+コミット
+git commit filename
+
