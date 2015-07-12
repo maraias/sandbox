@@ -1,0 +1,73 @@
+aptのアップデート
+$ sudo apt-get update
+
+グラフィックドライバのインストール
+Ubuntu SoftwareCenterより追加のドライバ
+
+Steam
+$ sudo dpkg -i ~.deb
+
+Gitのインストール
+$ sudo apt-get install git
+
+Emacsのインストール
+$ sudo apt-get install emacs24
+
+Chromeのインストール
+$ sudo apt-get install chromium-browser
+
+Lispのインストール
+$ sudo apt-get install clisp
+
+JDKのインストール
+$ sudo apt-get install openjdk-8-jdk
+
+Eclipseのインストール
+$ sudo apt-get install eclipse-platform
+jdk8.0でMaxPermSizeのオプションが削除されているのでeclipse.iniから削除
+$ nano /usr/lib/eclipse/eclipse.ini
+対象の行を削除
+再起動してWarningが出ていないことを確認
+
+Skypeのインストール
+Ubuntu SoftwareCenterよりインストール
+
+VMWare + Windows7
+$ chmod +x VMware-Player-7.1.2-278023.x86-64.bundle
+$ ./VMware-Player-7.1.2-278023.x86-64.bundle
+
+scalaのインストール
+$ sudo dpkg -i scala-2.11.7.deb
+
+rubyのインストール
+$ sudo apt-get install curl g++
+$ sudo apt-get install zlib1g-dev libssl-dev libreadline-dev libyaml-dev libxml2-dev libxslt-dev
+$ sudo apt-get install sqlite3 libsqlite3-dev nodejs
+#参考サイト
+http://www.masoo.jp/blog/2015/06/06/ubunt-install-log.html
+http://www.oiax.jp/rails/zakkan/rails_4_2_installation_on_ubunt.html
+
+jayatanaag.jar外し
+$ sudo vi ~/.bashrc
+unset JAVA_TOOL_OPTIONSを末尾に追加
+
+VMWareのWarning消し
+$ sudo apt-get install libgtkmm-2.4.1c2a
+$ sudo mkdir /etc/vmware/hostd && sudo touch /etc/vmware/hostd/proxy.xml
+$ vmplayer -v
+$ echo -e "<config>\n</config>" | sudo tee /etc/vmware/hostd/proxy.xml
+$ vmplayer -v
+# I/O warningが出なくなったことを確認
+#参考サイト
+http://labunix.hateblo.jp/entry/20150411/1428762367
+
+Windows7 + Office2010
+仮想マシン上にWindows7 + Office2010をインストール
+動作確認完了
+メモリを８GBに増設（予定）
+
+git設定
+$ git config --global user.name "name"
+$ git config --global user.email "email@address"
+$ git clone [reposity url]
+
