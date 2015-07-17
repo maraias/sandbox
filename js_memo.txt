@@ -1,0 +1,8 @@
+Javascriptのデバッグ方法
+http://postd.cc/how-to-not-hate-javascript-tips-from-the-frontline/
+http://kazefuku.net/archives/1244
+
+大抵のブラウザには開発者モードからJS自体のデバッグが可能なので、
+それを使ってブレークポイントを仕掛けるのも一つの手段
+ただし、SFDC上のHTMLで使えるかというと微妙かも
+ログ出力なら環境を選ばないはず
