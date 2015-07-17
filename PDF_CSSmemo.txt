@@ -1,0 +1,10 @@
+PDFメモ
+組版CSS
+http://www.antenna.co.jp/AHF/ahf5/CSSInfo/CSS-Page-Tutorial.pdf
+http://www.antennahouse.com/CSSInfo/CSS-Page-Tutorial.pdf
+
+contentの使い方
+http://www.w3.org/TR/css3-gcpm/
+
+table内日本語の折り返し
+⇒日本語では自動折り返しが利かないっぽいので<br/>や<wbr/>をコード内で挿入する
